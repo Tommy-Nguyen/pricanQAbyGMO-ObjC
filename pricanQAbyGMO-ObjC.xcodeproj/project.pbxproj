@@ -13,6 +13,10 @@
 		5FC469B31C44B2160073CCB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC469B11C44B2160073CCB6 /* LaunchScreen.storyboard */; };
 		5FC469BE1C44B29A0073CCB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469BD1C44B29A0073CCB6 /* AppDelegate.m */; };
 		5FC469C81C44B2FC0073CCB6 /* PQABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469C71C44B2FC0073CCB6 /* PQABaseViewController.m */; };
+		5FC469CD1C44BCA30073CCB6 /* PQADashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */; };
+		5FC469CE1C44BCA30073CCB6 /* PQADashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */; };
+		5FC469D31C44BD850073CCB6 /* PQAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469D11C44BD850073CCB6 /* PQAHomeViewController.m */; };
+		5FC469D41C44BD850073CCB6 /* PQAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC469D21C44BD850073CCB6 /* PQAHomeViewController.xib */; };
 		E0D461ED5B62380F9F8C70BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECC483BB43547D42EAF618D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,12 @@
 		5FC469BD1C44B29A0073CCB6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5FC469C61C44B2FC0073CCB6 /* PQABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQABaseViewController.h; sourceTree = "<group>"; };
 		5FC469C71C44B2FC0073CCB6 /* PQABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQABaseViewController.m; sourceTree = "<group>"; };
+		5FC469CA1C44BCA30073CCB6 /* PQADashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQADashboardViewController.h; sourceTree = "<group>"; };
+		5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQADashboardViewController.m; sourceTree = "<group>"; };
+		5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PQADashboardViewController.xib; sourceTree = "<group>"; };
+		5FC469D01C44BD850073CCB6 /* PQAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQAHomeViewController.h; sourceTree = "<group>"; };
+		5FC469D11C44BD850073CCB6 /* PQAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQAHomeViewController.m; sourceTree = "<group>"; };
+		5FC469D21C44BD850073CCB6 /* PQAHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PQAHomeViewController.xib; sourceTree = "<group>"; };
 		DF0DB200C32A20D3BFE8EAA0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E652B8E5833C3FB400E19120 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +120,8 @@
 		5FC469BF1C44B2B00073CCB6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5FC469CF1C44BD720073CCB6 /* PQAHome */,
+				5FC469C91C44BC880073CCB6 /* PQADashboard */,
 				5FC469C51C44B2EE0073CCB6 /* PQABase */,
 			);
 			path = ViewControllers;
@@ -157,6 +169,26 @@
 				5FC469C71C44B2FC0073CCB6 /* PQABaseViewController.m */,
 			);
 			path = PQABase;
+			sourceTree = "<group>";
+		};
+		5FC469C91C44BC880073CCB6 /* PQADashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5FC469CA1C44BCA30073CCB6 /* PQADashboardViewController.h */,
+				5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */,
+				5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */,
+			);
+			path = PQADashboard;
+			sourceTree = "<group>";
+		};
+		5FC469CF1C44BD720073CCB6 /* PQAHome */ = {
+			isa = PBXGroup;
+			children = (
+				5FC469D01C44BD850073CCB6 /* PQAHomeViewController.h */,
+				5FC469D11C44BD850073CCB6 /* PQAHomeViewController.m */,
+				5FC469D21C44BD850073CCB6 /* PQAHomeViewController.xib */,
+			);
+			path = PQAHome;
 			sourceTree = "<group>";
 		};
 		92EB335B507FAD7579643C32 /* Frameworks */ = {
@@ -227,8 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC469CE1C44BCA30073CCB6 /* PQADashboardViewController.xib in Resources */,
 				5FC469B31C44B2160073CCB6 /* LaunchScreen.storyboard in Resources */,
 				5FC469B01C44B2160073CCB6 /* Assets.xcassets in Resources */,
+				5FC469D41C44BD850073CCB6 /* PQAHomeViewController.xib in Resources */,
 				5FC469AE1C44B2160073CCB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC469CD1C44BCA30073CCB6 /* PQADashboardViewController.m in Sources */,
 				5FC469BE1C44B29A0073CCB6 /* AppDelegate.m in Sources */,
+				5FC469D31C44BD850073CCB6 /* PQAHomeViewController.m in Sources */,
 				5FC469A51C44B2160073CCB6 /* main.m in Sources */,
 				5FC469C81C44B2FC0073CCB6 /* PQABaseViewController.m in Sources */,
 			);
@@ -404,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "pricanQAbyGMO-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KLL.pricanQAbyGMO-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "pricanQAbyGMO-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KLL.pricanQAbyGMO-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "PQADashboardViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UINavigationController *navigationController;
+@property (nonatomic, strong) PQADashboardViewController *mainViewController;
 
 @end
 
@@ -17,6 +21,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // Main
+    self.mainViewController = [[PQADashboardViewController alloc] initWithNibName:NSStringFromClass([PQADashboardViewController class]) bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    
+    // Navigation bar appearance
+    UINavigationBar *navigationBar = [UINavigationBar appearance];
+    navigationBar.tintColor = [UIColor clearColor];
+    navigationBar.barTintColor = [UIColor clearColor];
+    [navigationBar setTitleTextAttributes:@{[UIColor whiteColor]: NSForegroundColorAttributeName}];
     return YES;
 }
 
