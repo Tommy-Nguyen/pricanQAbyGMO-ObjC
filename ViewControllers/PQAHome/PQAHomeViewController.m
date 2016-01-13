@@ -7,6 +7,8 @@
 //
 
 #import "PQAHomeViewController.h"
+#import "NetworkManager.h"
+#import "PQACards.h"
 
 @interface PQAHomeViewController ()
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [[NetworkManager sharedManager] getListDataFromServerAndCompletion:^(MFResponse *responseObject) {
+        PQACards *responseCard = [[PQACards alloc] initWithDictionary:responseObject.cards error:nil];
+        DLog(@"response -- %@", responseCard);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

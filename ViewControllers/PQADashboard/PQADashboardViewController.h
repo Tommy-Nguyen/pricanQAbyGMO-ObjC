@@ -7,6 +7,7 @@
 //
 
 #import "PQABaseViewController.h"
+#import "PQABaseNavigationBar.h" 
 
 @interface PQADashboardViewController : UITabBarController
 

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PQABaseNavigationBar.h"
 
 @interface PQABaseViewController : UIViewController
 
+- (void)addRighrButtonBarOnMenuBar;
 @end
