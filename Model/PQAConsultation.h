@@ -8,16 +8,6 @@
 
 #import <JSONModel/JSONModel.h>
 
-@protocol ProductModel
-@end
-
-@interface ProductModel : JSONModel
-
-@property (strong, nonatomic) NSString *defaultF;
-@property (assign, nonatomic) NSString *grayed;
-
-@end
-
 @protocol PQAConsultation
 @end
 
@@ -38,13 +28,14 @@
 @property (nonatomic, strong) NSArray<Optional> *categories;
 @property (nonatomic, strong) NSString *has_best_answer;
 @property (nonatomic, strong) NSString *is_watched;
+@property (nonatomic, strong) NSString *nickname;
 
 @property (nonatomic, strong) NSString *watch_count;
-@property (nonatomic, strong) NSString *anonymousNo;
+@property (nonatomic, assign) int anonymousNo;
 @property (nonatomic, strong) NSString *age;
 @property (nonatomic, strong) NSString *is_official_user;
-@property (nonatomic, strong) NSString *objDescription;
 
-@property (nonatomic, strong) NSArray<ProductModel> *thumbnail_urls;
+@property (nonatomic, strong) NSString *objDes;
+@property (strong, nonatomic) NSDictionary *thumbnail_urls;
 
 @end

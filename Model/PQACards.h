@@ -8,14 +8,12 @@
 
 #import <JSONModel/JSONModel.h>
 #import "PQAConsultation.h"
-#import "PQAHouseAd.h"
 
 @protocol PQACards
 @end
 
 @interface PQACards : JSONModel
 
-@property (nonatomic, strong) NSArray<PQAHouseAd> *house_Ad;
-@property (nonatomic, strong) NSArray<PQAConsultation> *consultation;
+@property (nonatomic, strong) PQAConsultation *consultation;
 
 @end

@@ -9,7 +9,11 @@
 #ifndef PQA_Prefix_h
 #define PQA_Prefix_h
 
+#import "DataManager.h"
 #import "MMMacro.h"
+#import "Define.h"
+
+#import "SVPullToRefresh.h"
 #import <AFNetworking/AFNetworking.h>
 
 #endif /* PQA_Prefix_h */

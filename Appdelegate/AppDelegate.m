@@ -7,12 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "PQADashboardViewController.h"
+#import "PQAHomeViewController.h"
 
 @interface AppDelegate ()
 
 @property (nonatomic, strong) UINavigationController *navigationController;
-@property (nonatomic, strong) PQADashboardViewController *mainViewController;
+@property (nonatomic, strong) PQAHomeViewController *mainViewController;
 
 @end
 
@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Main
-    self.mainViewController = [[PQADashboardViewController alloc] initWithNibName:NSStringFromClass([PQADashboardViewController class]) bundle:nil];
+    self.mainViewController = [[PQAHomeViewController alloc] initWithNibName:NSStringFromClass([PQAHomeViewController class]) bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

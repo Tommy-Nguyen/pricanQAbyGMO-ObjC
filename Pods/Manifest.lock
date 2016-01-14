@@ -21,16 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - JSONModel (1.2.0)
-  - LCTabBarController (1.2.5)
+  - MBProgressHUD (0.9.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
   - JSONModel
-  - LCTabBarController
+  - MBProgressHUD (~> 0.9.2)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
-  LCTabBarController: c857c54abc8e505902e3c92de3b4c22292f7f0f1
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
 
 COCOAPODS: 0.39.0

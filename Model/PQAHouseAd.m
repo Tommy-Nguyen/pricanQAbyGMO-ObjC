@@ -10,4 +10,8 @@
 
 @implementation PQAHouseAd
 
++ (BOOL)propertyIsOptional:(NSString *)propertyName {
+    return YES;
+}
+
 @end

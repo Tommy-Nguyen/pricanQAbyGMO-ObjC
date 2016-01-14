@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>LCTabBarController.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,12 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81363CF01D9FB04EAF038FB245CE5E2E</key>
+		<key>A90743F5813F9316CFACA619FDE76343</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF8A3D1272F91B31B3FE807A8CAAB675</key>
+		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

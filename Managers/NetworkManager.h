@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MFResponse.h"
+#import "PQAConsultation.h"
+#import "PQACards.h"
 
 @interface NetworkManager : AFHTTPRequestOperationManager
 
 + (NetworkManager *)sharedManager;
 
-- (void)getListDataFromServerAndCompletion:(void (^) (MFResponse *responseObject))completion;
+- (void)getListDataFromServerAndCompletion:(void (^) (NSMutableArray *consultations))completion;
 
 @end

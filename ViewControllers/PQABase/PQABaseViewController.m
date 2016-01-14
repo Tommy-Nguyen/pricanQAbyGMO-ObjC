@@ -2,7 +2,7 @@
 //  PQABaseViewController.m
 //  pricanQAbyGMO-ObjC
 //
-//  Created by DEV-MinhNN on 1/12/16.
+//  Created by DEV-MinhNN on 1/14/16.
 //  Copyright © 2016 DEV-MinhNN. All rights reserved.
 //
 
@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupNavigationBar];
+    [self addRighrButtonBarOnMenuBar];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,12 +40,44 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:RGBCOLOR(255, 134, 161)];
     [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
-    //    [[UINavigationBar appearance] setTitleTextAttributes:@{UITextAttributeTextColor : [UIColor whiteColor]}];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
-//- (void)addRighrButtonBarOnMenuBar {
-//    self.pqaBaseNavigationBar = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([PQABaseNavigationBar class]) owner:self options:nil] objectAtIndex:0];
-//    [self.view addSubview:self.pqaBaseNavigationBar];
-//}
+- (void)addRighrButtonBarOnMenuBar {
+    UIButton *imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    imageButton.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+    [imageButton setImage:[UIImage imageNamed:@"RightMenuBar"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:imageButton];
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    negativeSpacer.width = 0.0;
+    
+    [self.navigationItem setRightBarButtonItems:[NSArray arrayWithObjects:negativeSpacer, rightBarItem, nil] animated:NO];
+}
+
+- (void)addTabbarOnView:(UIView *)theView {
+    self.tabBar = [[UITabBarController alloc]init];
+    
+    // FirstViewController
+    UIViewController *fvc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    fvc.title = @"First";
+    fvc.tabBarItem.image = [UIImage imageNamed:@"i.png"];
+    
+    //SecondViewController
+    UIViewController *svc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    svc.title = @"Second";
+    svc.tabBarItem.image = [UIImage imageNamed:@"im.png"];
+    
+    //ThirdViewController
+    UIViewController *tvc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    tvc.title = @"Third";
+    tvc.tabBarItem.image = [UIImage imageNamed:@"img.png"];
+    
+    self.tabBar.viewControllers = [NSArray arrayWithObjects:fvc, svc, tvc, nil];
+    [theView addSubview:self.tabBar.view];
+}
 
 @end

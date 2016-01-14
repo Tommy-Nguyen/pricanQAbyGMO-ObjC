@@ -10,4 +10,6 @@
 
 @interface PQAHomeViewController : PQABaseViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end

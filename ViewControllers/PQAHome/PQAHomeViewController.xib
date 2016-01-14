@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PQAHomeViewController">
             <connections>
+                <outlet property="tableView" destination="Hlq-eg-Cst" id="quo-dD-mHL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,16 +16,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j1-Qs-rEp">
-                    <rect key="frame" x="111" y="319" width="46" height="30"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hlq-eg-Cst">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                     <animations/>
-                    <state key="normal" title="Button"/>
-                </button>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hlq-eg-Cst" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="INY-zn-uJV"/>
+                <constraint firstItem="Hlq-eg-Cst" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WAh-EJ-QHg"/>
+                <constraint firstAttribute="bottom" secondItem="Hlq-eg-Cst" secondAttribute="bottom" constant="49" id="Wv7-Bj-1T6"/>
+                <constraint firstAttribute="trailing" secondItem="Hlq-eg-Cst" secondAttribute="trailing" id="lDN-qv-qIo"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="289" y="412"/>
+            <point key="canvasLocation" x="-33" y="10"/>
         </view>
     </objects>
 </document>

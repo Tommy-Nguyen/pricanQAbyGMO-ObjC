@@ -44,8 +44,7 @@
                         method:(NSString *)method
                     parameters:(NSDictionary *)parameters
                     completion:(void (^) (MFResponse *responseObject))completion {
-    NSLog(@"%@", self.requestSerializer.HTTPRequestHeaders);
-    
+    DLog(@"%@", self.requestSerializer.HTTPRequestHeaders);
     NSMutableURLRequest *request = [self requestWithMethod:method parameters:parameters path:path];
     
     if (request) {
@@ -113,8 +112,16 @@
 
 #pragma mark - Api Method
 
-- (void)getListDataFromServerAndCompletion:(void (^) (MFResponse *responseObject))completion {
-    [self callWebserviceWithPath:@"" method:@"GET" parameters:nil completion:completion];
+- (void)getListDataFromServerAndCompletion:(void (^) (NSMutableArray *consultations))completion {
+    [self callWebserviceWithPath:@"" method:@"GET" parameters:nil completion:^(MFResponse *responseObject) {
+        NSMutableArray *result = [NSMutableArray new];
+        for (NSDictionary *dict in responseObject.cards) {
+            [result addObject:dict];
+        }
+        if (completion) {
+            completion(result);
+        }
+    }];
 }
 
 @end

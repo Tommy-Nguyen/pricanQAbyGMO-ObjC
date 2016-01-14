@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F2E44F11C45F641005DC752 /* PQABaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E44F01C45F641005DC752 /* PQABaseNavigationBar.m */; };
-		5F2E44F31C45F65E005DC752 /* PQABaseNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2E44F21C45F65D005DC752 /* PQABaseNavigationBar.xib */; };
 		5F2E44F71C4602C0005DC752 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E44F61C4602C0005DC752 /* NetworkManager.m */; };
 		5F2E44F91C460370005DC752 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F2E44F81C460370005DC752 /* Configuration.plist */; };
 		5F2E44FE1C46087D005DC752 /* MFResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E44FD1C46087D005DC752 /* MFResponse.m */; };
 		5F2E45011C460B38005DC752 /* PQAConsultation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E45001C460B38005DC752 /* PQAConsultation.m */; };
 		5F2E45041C46258A005DC752 /* PQAHouseAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E45031C46258A005DC752 /* PQAHouseAd.m */; };
 		5F2E45071C462616005DC752 /* PQACards.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E45061C462616005DC752 /* PQACards.m */; };
+		5F52B1F71C47461C00CEF79E /* PQACustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B1F51C47461C00CEF79E /* PQACustomTableViewCell.m */; };
+		5F52B1F81C47461C00CEF79E /* PQACustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F52B1F61C47461C00CEF79E /* PQACustomTableViewCell.xib */; };
+		5F52B2101C474DCD00CEF79E /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B20F1C474DCD00CEF79E /* DataManager.m */; };
+		5F52B2141C4773ED00CEF79E /* PQACardHouseAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B2131C4773ED00CEF79E /* PQACardHouseAd.m */; };
+		5F52B21C1C47795800CEF79E /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B2191C47795800CEF79E /* UIScrollView+SVInfiniteScrolling.m */; };
+		5F52B21D1C47795800CEF79E /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B21B1C47795800CEF79E /* UIScrollView+SVPullToRefresh.m */; };
+		5F52B2221C477C4E00CEF79E /* PQADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B2201C477C4E00CEF79E /* PQADetailViewController.m */; };
+		5F52B2231C477C4E00CEF79E /* PQADetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F52B2211C477C4E00CEF79E /* PQADetailViewController.xib */; };
+		5F52B22B1C477DD000CEF79E /* PQABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F52B22A1C477DD000CEF79E /* PQABaseViewController.m */; };
 		5FC469A51C44B2160073CCB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469A41C44B2160073CCB6 /* main.m */; };
 		5FC469AE1C44B2160073CCB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC469AC1C44B2160073CCB6 /* Main.storyboard */; };
 		5FC469B01C44B2160073CCB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC469AF1C44B2160073CCB6 /* Assets.xcassets */; };
 		5FC469B31C44B2160073CCB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC469B11C44B2160073CCB6 /* LaunchScreen.storyboard */; };
 		5FC469BE1C44B29A0073CCB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469BD1C44B29A0073CCB6 /* AppDelegate.m */; };
-		5FC469C81C44B2FC0073CCB6 /* PQABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469C71C44B2FC0073CCB6 /* PQABaseViewController.m */; };
 		5FC469CD1C44BCA30073CCB6 /* PQADashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */; };
 		5FC469CE1C44BCA30073CCB6 /* PQADashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */; };
 		5FC469D31C44BD850073CCB6 /* PQAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC469D11C44BD850073CCB6 /* PQAHomeViewController.m */; };
@@ -31,11 +37,8 @@
 /* Begin PBXFileReference section */
 		4ECC483BB43547D42EAF618D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2E44E71C45EFC9005DC752 /* MMMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMacro.h; sourceTree = "<group>"; };
-		5F2E44EF1C45F641005DC752 /* PQABaseNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQABaseNavigationBar.h; sourceTree = "<group>"; };
-		5F2E44F01C45F641005DC752 /* PQABaseNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQABaseNavigationBar.m; sourceTree = "<group>"; };
-		5F2E44F21C45F65D005DC752 /* PQABaseNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PQABaseNavigationBar.xib; sourceTree = "<group>"; };
 		5F2E44F51C4602C0005DC752 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
-		5F2E44F61C4602C0005DC752 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		5F2E44F61C4602C0005DC752 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; wrapsLines = 0; };
 		5F2E44F81C460370005DC752 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		5F2E44FB1C46078A005DC752 /* PQA-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PQA-Prefix.h"; sourceTree = "<group>"; };
 		5F2E44FC1C46087D005DC752 /* MFResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFResponse.h; sourceTree = "<group>"; };
@@ -46,6 +49,24 @@
 		5F2E45031C46258A005DC752 /* PQAHouseAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQAHouseAd.m; sourceTree = "<group>"; };
 		5F2E45051C462615005DC752 /* PQACards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQACards.h; sourceTree = "<group>"; };
 		5F2E45061C462616005DC752 /* PQACards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQACards.m; sourceTree = "<group>"; };
+		5F52B1F41C47461C00CEF79E /* PQACustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQACustomTableViewCell.h; sourceTree = "<group>"; };
+		5F52B1F51C47461C00CEF79E /* PQACustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQACustomTableViewCell.m; sourceTree = "<group>"; };
+		5F52B1F61C47461C00CEF79E /* PQACustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PQACustomTableViewCell.xib; sourceTree = "<group>"; };
+		5F52B20E1C474DCD00CEF79E /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		5F52B20F1C474DCD00CEF79E /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		5F52B2111C474EEC00CEF79E /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Define.h; path = ../Define.h; sourceTree = "<group>"; };
+		5F52B2121C4773ED00CEF79E /* PQACardHouseAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQACardHouseAd.h; sourceTree = "<group>"; };
+		5F52B2131C4773ED00CEF79E /* PQACardHouseAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQACardHouseAd.m; sourceTree = "<group>"; };
+		5F52B2171C47795800CEF79E /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		5F52B2181C47795800CEF79E /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		5F52B2191C47795800CEF79E /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		5F52B21A1C47795800CEF79E /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		5F52B21B1C47795800CEF79E /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		5F52B21F1C477C4E00CEF79E /* PQADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQADetailViewController.h; sourceTree = "<group>"; };
+		5F52B2201C477C4E00CEF79E /* PQADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQADetailViewController.m; sourceTree = "<group>"; };
+		5F52B2211C477C4E00CEF79E /* PQADetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PQADetailViewController.xib; sourceTree = "<group>"; };
+		5F52B2291C477DD000CEF79E /* PQABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQABaseViewController.h; sourceTree = "<group>"; };
+		5F52B22A1C477DD000CEF79E /* PQABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQABaseViewController.m; sourceTree = "<group>"; };
 		5FC469A01C44B2150073CCB6 /* pricanQAbyGMO-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pricanQAbyGMO-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC469A41C44B2160073CCB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FC469AD1C44B2160073CCB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,8 +75,6 @@
 		5FC469B41C44B2160073CCB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FC469BC1C44B29A0073CCB6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5FC469BD1C44B29A0073CCB6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5FC469C61C44B2FC0073CCB6 /* PQABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQABaseViewController.h; sourceTree = "<group>"; };
-		5FC469C71C44B2FC0073CCB6 /* PQABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQABaseViewController.m; sourceTree = "<group>"; };
 		5FC469CA1C44BCA30073CCB6 /* PQADashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQADashboardViewController.h; sourceTree = "<group>"; };
 		5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQADashboardViewController.m; sourceTree = "<group>"; };
 		5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PQADashboardViewController.xib; sourceTree = "<group>"; };
@@ -87,15 +106,65 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5F52B1EF1C4745B700CEF79E /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5F52B1F01C4745C900CEF79E /* CustomViewCell */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		5F52B1F01C4745C900CEF79E /* CustomViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F52B1F41C47461C00CEF79E /* PQACustomTableViewCell.h */,
+				5F52B1F51C47461C00CEF79E /* PQACustomTableViewCell.m */,
+				5F52B1F61C47461C00CEF79E /* PQACustomTableViewCell.xib */,
+			);
+			path = CustomViewCell;
+			sourceTree = "<group>";
+		};
+		5F52B1F91C474DA500CEF79E /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				5F52B2161C47795800CEF79E /* SVPullToRefresh */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		5F52B2161C47795800CEF79E /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				5F52B2171C47795800CEF79E /* SVPullToRefresh.h */,
+				5F52B2181C47795800CEF79E /* UIScrollView+SVInfiniteScrolling.h */,
+				5F52B2191C47795800CEF79E /* UIScrollView+SVInfiniteScrolling.m */,
+				5F52B21A1C47795800CEF79E /* UIScrollView+SVPullToRefresh.h */,
+				5F52B21B1C47795800CEF79E /* UIScrollView+SVPullToRefresh.m */,
+			);
+			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+		5F52B21E1C477C3500CEF79E /* PQAHomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5F52B21F1C477C4E00CEF79E /* PQADetailViewController.h */,
+				5F52B2201C477C4E00CEF79E /* PQADetailViewController.m */,
+				5F52B2211C477C4E00CEF79E /* PQADetailViewController.xib */,
+			);
+			path = PQAHomeDetail;
+			sourceTree = "<group>";
+		};
 		5FC469971C44B2150073CCB6 = {
 			isa = PBXGroup;
 			children = (
 				5FC469BB1C44B29A0073CCB6 /* Appdelegate */,
+				5F52B1F91C474DA500CEF79E /* ThirdParty */,
 				5FC469C41C44B2D10073CCB6 /* Utilities */,
 				5FC469C11C44B2BC0073CCB6 /* Managers */,
 				5FC469C21C44B2C10073CCB6 /* Model */,
 				5FC469C01C44B2B70073CCB6 /* Common */,
 				5FC469BF1C44B2B00073CCB6 /* ViewControllers */,
+				5F52B1EF1C4745B700CEF79E /* Custom Classes */,
 				5FC469A21C44B2160073CCB6 /* pricanQAbyGMO-ObjC */,
 				5FC469C31C44B2C70073CCB6 /* Resources */,
 				5FC469A11C44B2150073CCB6 /* Products */,
@@ -146,6 +215,7 @@
 		5FC469BF1C44B2B00073CCB6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5F52B21E1C477C3500CEF79E /* PQAHomeDetail */,
 				5FC469CF1C44BD720073CCB6 /* PQAHome */,
 				5FC469C91C44BC880073CCB6 /* PQADashboard */,
 				5FC469C51C44B2EE0073CCB6 /* PQABase */,
@@ -156,6 +226,7 @@
 		5FC469C01C44B2B70073CCB6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5F52B2111C474EEC00CEF79E /* Define.h */,
 				5F2E44E71C45EFC9005DC752 /* MMMacro.h */,
 			);
 			path = Common;
@@ -166,6 +237,8 @@
 			children = (
 				5F2E44F51C4602C0005DC752 /* NetworkManager.h */,
 				5F2E44F61C4602C0005DC752 /* NetworkManager.m */,
+				5F52B20E1C474DCD00CEF79E /* DataManager.h */,
+				5F52B20F1C474DCD00CEF79E /* DataManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -181,6 +254,8 @@
 				5F2E45031C46258A005DC752 /* PQAHouseAd.m */,
 				5F2E45051C462615005DC752 /* PQACards.h */,
 				5F2E45061C462616005DC752 /* PQACards.m */,
+				5F52B2121C4773ED00CEF79E /* PQACardHouseAd.h */,
+				5F52B2131C4773ED00CEF79E /* PQACardHouseAd.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,11 +277,8 @@
 		5FC469C51C44B2EE0073CCB6 /* PQABase */ = {
 			isa = PBXGroup;
 			children = (
-				5FC469C61C44B2FC0073CCB6 /* PQABaseViewController.h */,
-				5FC469C71C44B2FC0073CCB6 /* PQABaseViewController.m */,
-				5F2E44EF1C45F641005DC752 /* PQABaseNavigationBar.h */,
-				5F2E44F01C45F641005DC752 /* PQABaseNavigationBar.m */,
-				5F2E44F21C45F65D005DC752 /* PQABaseNavigationBar.xib */,
+				5F52B2291C477DD000CEF79E /* PQABaseViewController.h */,
+				5F52B22A1C477DD000CEF79E /* PQABaseViewController.m */,
 			);
 			path = PQABase;
 			sourceTree = "<group>";
@@ -215,8 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				5FC469CA1C44BCA30073CCB6 /* PQADashboardViewController.h */,
-				5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */,
 				5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */,
+				5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */,
 			);
 			path = PQADashboard;
 			sourceTree = "<group>";
@@ -302,10 +374,11 @@
 				5FC469CE1C44BCA30073CCB6 /* PQADashboardViewController.xib in Resources */,
 				5FC469B31C44B2160073CCB6 /* LaunchScreen.storyboard in Resources */,
 				5F2E44F91C460370005DC752 /* Configuration.plist in Resources */,
+				5F52B2231C477C4E00CEF79E /* PQADetailViewController.xib in Resources */,
+				5F52B1F81C47461C00CEF79E /* PQACustomTableViewCell.xib in Resources */,
 				5FC469B01C44B2160073CCB6 /* Assets.xcassets in Resources */,
 				5FC469D41C44BD850073CCB6 /* PQAHomeViewController.xib in Resources */,
 				5FC469AE1C44B2160073CCB6 /* Main.storyboard in Resources */,
-				5F2E44F31C45F65E005DC752 /* PQABaseNavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +437,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F52B2141C4773ED00CEF79E /* PQACardHouseAd.m in Sources */,
 				5FC469CD1C44BCA30073CCB6 /* PQADashboardViewController.m in Sources */,
+				5F52B2221C477C4E00CEF79E /* PQADetailViewController.m in Sources */,
+				5F52B21C1C47795800CEF79E /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				5F2E45071C462616005DC752 /* PQACards.m in Sources */,
+				5F52B21D1C47795800CEF79E /* UIScrollView+SVPullToRefresh.m in Sources */,
 				5F2E45011C460B38005DC752 /* PQAConsultation.m in Sources */,
 				5F2E44FE1C46087D005DC752 /* MFResponse.m in Sources */,
 				5F2E44F71C4602C0005DC752 /* NetworkManager.m in Sources */,
@@ -373,8 +450,9 @@
 				5FC469BE1C44B29A0073CCB6 /* AppDelegate.m in Sources */,
 				5FC469D31C44BD850073CCB6 /* PQAHomeViewController.m in Sources */,
 				5FC469A51C44B2160073CCB6 /* main.m in Sources */,
-				5FC469C81C44B2FC0073CCB6 /* PQABaseViewController.m in Sources */,
-				5F2E44F11C45F641005DC752 /* PQABaseNavigationBar.m in Sources */,
+				5F52B2101C474DCD00CEF79E /* DataManager.m in Sources */,
+				5F52B22B1C477DD000CEF79E /* PQABaseViewController.m in Sources */,
+				5F52B1F71C47461C00CEF79E /* PQACustomTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
