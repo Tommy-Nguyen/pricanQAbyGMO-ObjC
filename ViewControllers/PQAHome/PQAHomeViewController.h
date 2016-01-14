@@ -11,5 +11,6 @@
 @interface PQAHomeViewController : PQABaseViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITabBar *customTabBar;
 
 @end

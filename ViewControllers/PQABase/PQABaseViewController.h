@@ -12,6 +12,4 @@
 
 @property (nonatomic, retain) UITabBarController *tabBar;
 
-- (void)addTabbarOnView:(UIView *)theView;
-
 @end

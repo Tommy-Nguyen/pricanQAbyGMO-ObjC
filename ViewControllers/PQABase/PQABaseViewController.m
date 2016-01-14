@@ -58,26 +58,4 @@
     [self.navigationItem setRightBarButtonItems:[NSArray arrayWithObjects:negativeSpacer, rightBarItem, nil] animated:NO];
 }
 
-- (void)addTabbarOnView:(UIView *)theView {
-    self.tabBar = [[UITabBarController alloc]init];
-    
-    // FirstViewController
-    UIViewController *fvc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
-    fvc.title = @"First";
-    fvc.tabBarItem.image = [UIImage imageNamed:@"i.png"];
-    
-    //SecondViewController
-    UIViewController *svc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
-    svc.title = @"Second";
-    svc.tabBarItem.image = [UIImage imageNamed:@"im.png"];
-    
-    //ThirdViewController
-    UIViewController *tvc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
-    tvc.title = @"Third";
-    tvc.tabBarItem.image = [UIImage imageNamed:@"img.png"];
-    
-    self.tabBar.viewControllers = [NSArray arrayWithObjects:fvc, svc, tvc, nil];
-    [theView addSubview:self.tabBar.view];
-}
-
 @end

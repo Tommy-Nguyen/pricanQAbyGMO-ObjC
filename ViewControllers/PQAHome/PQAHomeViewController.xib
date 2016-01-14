@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PQAHomeViewController">
             <connections>
+                <outlet property="customTabBar" destination="JCF-fX-UPN" id="N4C-fE-Tqa"/>
                 <outlet property="tableView" destination="Hlq-eg-Cst" id="quo-dD-mHL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,6 +22,15 @@
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCF-fX-UPN">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <items>
+                        <tabBarItem systemItem="favorites" id="caB-I9-tgz"/>
+                        <tabBarItem systemItem="more" id="tnc-Ll-Qdj"/>
+                    </items>
+                </tabBar>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
