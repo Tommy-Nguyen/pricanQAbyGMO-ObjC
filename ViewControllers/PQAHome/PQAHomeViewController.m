@@ -133,23 +133,23 @@ static NSString *CellIdentifier = @"CellIdentifier";
     [self.navigationController pushViewController:detaileView animated:YES];
 }
 
-- (void)addCenterButton {
-    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0.0, 0.0, 60.0, 60.0);
-    [button setBackgroundImage:[UIImage imageNamed:@"IconCenter"] forState:UIControlStateNormal];
-    
-    CGFloat heightDifference = buttonImage.size.height - self.customTabBar.frame.size.height;
-    
-    if (heightDifference < 0)
-        button.center = self.customTabBar.center;
-    else
-    {
-        CGPoint center = self.customTabBar.center;
-        center.y = center.y - heightDifference/2.0;
-        button.center = center;
-    }
-    
-    [self.view addSubview:button];
-}
+//- (void)addCenterButton {
+//    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.frame = CGRectMake(0.0, 0.0, 60.0, 60.0);
+//    [button setBackgroundImage:[UIImage imageNamed:@"IconCenter"] forState:UIControlStateNormal];
+//    
+//    CGFloat heightDifference = buttonImage.size.height - self.customTabBar.frame.size.height;
+//    
+//    if (heightDifference < 0)
+//        button.center = self.customTabBar.center;
+//    else
+//    {
+//        CGPoint center = self.customTabBar.center;
+//        center.y = center.y - heightDifference/2.0;
+//        button.center = center;
+//    }
+//    
+//    [self.view addSubview:button];
+//}
 
 @end
