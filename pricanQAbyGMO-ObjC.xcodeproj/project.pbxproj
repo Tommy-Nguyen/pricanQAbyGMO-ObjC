@@ -287,8 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				5FC469CA1C44BCA30073CCB6 /* PQADashboardViewController.h */,
-				5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */,
 				5FC469CB1C44BCA30073CCB6 /* PQADashboardViewController.m */,
+				5FC469CC1C44BCA30073CCB6 /* PQADashboardViewController.xib */,
 			);
 			path = PQADashboard;
 			sourceTree = "<group>";

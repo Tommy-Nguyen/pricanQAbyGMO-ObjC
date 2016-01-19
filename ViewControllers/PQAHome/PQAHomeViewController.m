@@ -37,6 +37,10 @@ static NSString *CellIdentifier = @"CellIdentifier";
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
@@ -64,6 +68,16 @@ static NSString *CellIdentifier = @"CellIdentifier";
     _listShow = [NSMutableArray new];
     _number = 0;
     self.navigationItem.title = @"Home List View";
+    
+    if ([self respondsToSelector:@selector(automaticallyAdjustsScrollViewInsets)]) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+        
+        UIEdgeInsets insets = self.tableView.contentInset;
+        insets.top = self.navigationController.navigationBar.bounds.size.height +
+        [UIApplication sharedApplication].statusBarFrame.size.height;
+        self.tableView.contentInset = insets;
+        self.tableView.scrollIndicatorInsets = insets;
+    }
     
     [self.tableView addPullToRefreshWithActionHandler:^{
         [self loadDataToShow];

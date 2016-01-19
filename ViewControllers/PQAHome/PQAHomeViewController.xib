@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PQAHomeViewController">
             <connections>
-                <outlet property="customTabBar" destination="JCF-fX-UPN" id="N4C-fE-Tqa"/>
                 <outlet property="tableView" destination="Hlq-eg-Cst" id="quo-dD-mHL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,30 +17,21 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hlq-eg-Cst">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCF-fX-UPN">
-                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
-                    <animations/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <items>
-                        <tabBarItem systemItem="favorites" id="caB-I9-tgz"/>
-                        <tabBarItem systemItem="more" id="tnc-Ll-Qdj"/>
-                    </items>
-                </tabBar>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Hlq-eg-Cst" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="INY-zn-uJV"/>
                 <constraint firstItem="Hlq-eg-Cst" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WAh-EJ-QHg"/>
-                <constraint firstAttribute="bottom" secondItem="Hlq-eg-Cst" secondAttribute="bottom" constant="49" id="Wv7-Bj-1T6"/>
+                <constraint firstAttribute="bottom" secondItem="Hlq-eg-Cst" secondAttribute="bottom" constant="50" id="Wv7-Bj-1T6"/>
                 <constraint firstAttribute="trailing" secondItem="Hlq-eg-Cst" secondAttribute="trailing" id="lDN-qv-qIo"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="-33" y="10"/>
+            <point key="canvasLocation" x="-145" y="-181"/>
         </view>
     </objects>
 </document>

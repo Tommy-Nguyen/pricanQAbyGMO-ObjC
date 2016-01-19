@@ -10,4 +10,6 @@
 
 @interface PQADashboardViewController : UITabBarController
 
+@property (nonatomic, assign) UINavigationController *navigationController;
+
 @end

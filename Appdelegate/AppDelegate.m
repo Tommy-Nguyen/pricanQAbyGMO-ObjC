@@ -7,12 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "PQAHomeViewController.h"
+#import "PQADashboardViewController.h"
 
 @interface AppDelegate ()
 
 @property (nonatomic, strong) UINavigationController *navigationController;
-@property (nonatomic, strong) PQAHomeViewController *mainViewController;
+@property (nonatomic, strong) PQADashboardViewController *mainViewController;
 
 @end
 
@@ -22,18 +22,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Main
-    self.mainViewController = [[PQAHomeViewController alloc] initWithNibName:NSStringFromClass([PQAHomeViewController class]) bundle:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
+    self.mainViewController = [[PQADashboardViewController alloc] initWithNibName:NSStringFromClass([PQADashboardViewController class]) bundle:nil];
+    
+    self.navigationController = [[UINavigationController alloc] init];
+    self.mainViewController.navigationController = self.navigationController;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = self.mainViewController ;
     [self.window makeKeyAndVisible];
     
-    // Navigation bar appearance
-    UINavigationBar *navigationBar = [UINavigationBar appearance];
-    navigationBar.tintColor = [UIColor clearColor];
-    navigationBar.barTintColor = [UIColor clearColor];
-    [navigationBar setTitleTextAttributes:@{[UIColor whiteColor]: NSForegroundColorAttributeName}];
+    UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
+    [tabBar setSelectedIndex:2];
+    
     return YES;
 }
 
